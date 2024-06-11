@@ -1,0 +1,9 @@
+.section-bachhoamy{
+    text-align: center;
+    height: 600px;
+   display: grid;
+   place-items: center;
+}
+.wait-product{
+    font-size: 18px;
+}

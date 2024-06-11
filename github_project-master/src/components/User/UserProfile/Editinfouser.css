@@ -1,0 +1,36 @@
+.title-edituser {
+    height: auto;
+}
+.dropdowm-edituser button {
+    width: 100px;
+    padding: 0 !important;
+}
+.head-edituser {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+.editsuer-name > button {
+    border: none;
+    background: #000;
+    color: #fff;
+    border-radius: 20px;
+    margin-right: 10px;
+    padding: 5px 10px;
+}
+.editsuer-name span{
+    font-weight: 500;
+}
+.edituser-loyalty-point {
+    display: flex;
+    gap: 20px;
+}
+.edituser-loyalty-point > div {
+    font-weight: 600;
+    font-size: 16px;
+}
+.value-edituser-loyalty,
+.edituser-loyalty-Ttpay {
+    margin-top: 20px;
+    font-size: 20px;
+}

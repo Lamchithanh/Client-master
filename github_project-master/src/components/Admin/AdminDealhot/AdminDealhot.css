@@ -1,0 +1,37 @@
+.Dealhot-logo-title {
+    display: flex;
+    gap: 10px;
+    margin: 10px;
+    align-items: center;
+}
+.form-Dealhot > button.btn-Dealhot {
+    width: 200px;
+    margin-bottom: 10px;
+}
+#Dealhot {
+    /* margin-top: 20px; */
+    width: 90%;
+}
+/* .btn-Dealhot{
+    border-radius: 8px;
+    border: 1px #04aa6d solid;
+    color: black
+} */
+.table-showadd{
+    border-top: #e4e3e3 solid 1px;
+    border-bottom: #e4e3e3 solid 1px;
+}
+td.col-Image-Dealhot {
+    width: 200px;
+    overflow: hidden;
+}
+.col-Image-Dealhot img {
+    object-fit: cover;
+    width: 100px;
+}
+
+button.btn-Dealhot {
+    width: 200px;
+    background: #13c421;
+    box-shadow: #85cf8b 0 0 5px 2px;
+}

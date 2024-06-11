@@ -1,0 +1,338 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* @import url(../HomePage/NavOption.css); */
+
+body {
+    box-sizing: border-box;
+}
+.position-sticky {
+    position: sticky;
+    font-style: 16px;
+}
+.Form-nav {
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+    font-family: "Roboto", sans-serif;
+}
+.line-short {
+    width: 100%;
+    height: auto;
+    background: #000;
+    color: #e5e5e5;
+    text-align: center;
+    padding: 8px;
+    font-weight: 600;
+}
+.logo {
+    width: 150px;
+    height: 100px;
+}
+.Search {
+    display: grid;
+    place-items: center;
+}
+.title-search {
+    display: flex;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-style: normal;
+}
+.title-search li {
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    min-width: 80px;
+    transition: 0.33s ease;
+    font-size: 16px;
+}
+.title-search li:hover {
+    background-color: #000;
+    color: #e5e5e5;
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.taskbar-search {
+    display: flex;
+    align-items: center;
+    /* background-color: #e5e5e5; */
+    height: 70px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 600px;
+    position: relative;
+}
+.Search .title-search li:hover ~ .taskbar-search {
+    border-top-left-radius: 10px;
+}
+.input {
+    width: 95%;
+}
+.search-icon {
+    cursor: pointer;
+    display: flex;
+    justify-content: end;
+    margin: 10px 0;
+}
+.input input {
+    margin: 10px;
+    padding: 5px 15px;
+    width: 96%;
+    border: none;
+    border-radius: 20px;
+    background-color: dimgrey;
+    color: azure;
+}
+
+input::placeholder {
+    color: white;
+}
+input:focus {
+    outline: none;
+}
+
+.Form-signup {
+    display: flex;
+    align-items: center;
+    color: black;
+    margin: 10px;
+    gap: 5px;
+}
+/* bag */
+.bag {
+    padding-top: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px #000 solid;
+}
+.bag li i {
+    font-size: 20px;
+}
+.bag li {
+    padding: 6px;
+}
+.signup > a,
+.bag a {
+    padding-top: 50px;
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+.dropdown-menu {
+    padding: 0 !important;
+    padding-bottom: 10px !important;
+    width: 300px;
+    border: 1px rgb(59, 59, 59) solid !important;
+    border-top: none;
+}
+.dropdown-menu li.li-login,
+.dropdown-menu li.li-singup {
+    padding: 10px;
+}
+.li-login,
+.li-singup {
+    transition: 0.33s ease;
+}
+.dropdown-menu a {
+    color: #000;
+    text-decoration: none;
+}
+.li-login,
+.li-singup {
+    font-size: 16px;
+    font-weight: 500;
+    color: #303846;
+    text-decoration: none;
+    padding: 10px;
+}
+.li-login:hover,
+.li-singup:hover {
+    background: #858282;
+}
+.dropdown button {
+    margin: 0;
+    border: none;
+    border-radius: 10px;
+    color: #e5e5e5;
+}
+.body-conten-TvTpay {
+    padding-top: 20px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+}
+.body-conten-TvTpay > li {
+    margin: 10px;
+}
+.body-conten-TvTpay > li:nth-child(4) {
+    text-align: center;
+}
+.body-conten-TvTpay li img {
+    height: 100%;
+}
+.title-name-login {
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #f3f5f7;
+}
+.edit-title-user span i {
+    padding: 5px;
+    border-radius: 100rem;
+    background: #303846;
+    color: #e5e5e5;
+}
+.title-name-login li {
+    margin: 0;
+}
+.title-name-login li:nth-child(2) {
+    margin-top: 20px;
+    font-size: 12px;
+}
+.body-conten-TvTpay > li:nth-child(1),
+.body-conten-TvTpay > li:nth-child(2) {
+    font-weight: 600;
+    margin: 0;
+    padding: 0 10px;
+    font-size: 13px;
+}
+.body-conten-TvTpay > li:nth-child(3) {
+    font-size: 12px;
+}
+.user-menu-list {
+    margin: 10px;
+    padding: 0;
+}
+.user-menu-list li {
+    font-size: 16px;
+    padding: 10px 0;
+    transition: 0.33s ease;
+    border-radius: 4px;
+}
+.user-menu-list > li:hover {
+    background: #f3f5f7;
+}
+.user-logout {
+    background-color: red !important;
+    color: red !important;
+    font-weight: 300;
+}
+.user-logout a {
+    text-decoration: none;
+    color: #303846 !important;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: white !important;
+}
+.user-logout span i {
+    margin: 0 5px 0 10px;
+    font-size: 16px;
+}
+.user-menu-list li span {
+    margin: 10px;
+}
+.user-menu-list li span i {
+    font-size: 18px;
+}
+/* .dropdown:hover .dropdown-menu {
+    display: block;
+  } */
+/* .signup {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .bag {
+    margin-left: 20px;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  } */
+
+.dropdown.dropstart .dropdown-menu {
+    display: none;
+    position: absolute;
+    /* left: 0; */
+    right: 0;
+    top: 100%;
+    background-color: #fff; /* Màu nền */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); /* Hiệu ứng shadow */
+    padding: 10px; /* Khoảng cách padding */
+}
+
+.dropdown.dropstart:hover .dropdown-menu {
+    display: block;
+}
+
+.hover-only {
+    pointer-events: none;
+}
+
+.hover-only:hover {
+    pointer-events: auto;
+}
+/* .disabled {
+    pointer-events: none;
+    opacity: 0.5;
+} */
+body.no-scroll {
+    overflow: hidden;
+}
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Màu xám và độ mờ */
+    z-index: 1040; /* Dưới modal nhưng trên các phần tử khác */
+}
+/* BAG */
+.bag {
+    position: relative;
+}
+
+.bag li {
+    list-style: none;
+    position: relative;
+    display: inline-block;
+}
+
+.icofont-cart {
+    font-size: 50px;
+    position: relative;
+}
+
+.badgeee {
+    position: absolute;
+    top: -18px;
+    right: -17px;
+    background-color: rgb(255, 71, 71);
+    color: white;
+    border-radius: 100%;
+    /* padding:  50px;  */
+    width: 32px;
+    height: 32px;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+}
+.badgeee-clild {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

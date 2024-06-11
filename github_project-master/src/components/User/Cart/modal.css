@@ -1,0 +1,58 @@
+.btn-thong-tin-dat-hang button{
+background: #141414;
+color: #f7fffd;
+width: 250px;
+}
+ .modal-content { 
+  width: 400px ; 
+  /* height: 250px ;  */
+} 
+.form-updata-info input {
+  width: 100%;
+  display: grid;
+  padding: 2px;
+  margin: 2px 0;
+  border: 2px #818e98 solid;
+}
+.form-updata-info p {
+  font-size: 13px;
+}
+.form-updata-info span {
+  font-size: 13px;
+  font-weight: 500;
+}
+.modal-ten-sdt label,
+.modal-sdt label,
+.modal-dia-diem label {
+  font-weight: 600;
+  font-size: 13px;
+}
+.modal-ten-sdt label {
+  margin: 5px 0;
+}
+.modal-sdt {
+  margin: 10px 0;
+  padding: 10px 0;
+  border-top: #818e98 1px solid;
+  border-bottom: #818e98 1px solid;
+  width: 100%;
+}
+.modal-sdt p {
+  margin-top: 5px;
+}
+.modal-dia-chi-chinh-xac textarea {
+  width: 100%;
+  padding: 10px;
+}
+.modal-dia-chi-chinh-xac p{
+    margin: 10px 0;
+}
+.modal-option-dia-diem select {
+  padding: 10px;
+  width: 100%;
+  color: #818e98;
+}
+/* .model-big{
+  width: none !important;
+  height: hie !important;
+} */

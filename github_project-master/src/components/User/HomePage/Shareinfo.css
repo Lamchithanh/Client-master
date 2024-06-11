@@ -1,0 +1,11 @@
+.main {
+  height: auto;
+  margin: 0;
+  padding: 10px;
+  display: grid;
+  place-items: center;
+}
+.section img {
+  border-radius: 20px;
+  width: 300px;
+}

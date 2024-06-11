@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+html,
+body {
+  height: 100%;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+.img-info {
+  width: 100%;
+  height: 330px;
+  /* position: relative; */
+}
+.nav-head1 {
+  height: 450px;
+  margin: 0;
+  padding: 0;
+}
+
+.img-megative {
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+}
+.img-info img {
+  width: 100%;
+  object-fit: cover;
+}
+.nav-info {
+  margin-top: 50px;
+  display: grid;
+  place-items: center;
+}
+.nav-info ul {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.nav-info ul li {
+  width: 250px;
+  font-size: 20px;
+  position: relative;
+  display: flex;
+  /* justify-content: center; */
+  padding: 10px;
+}
+.nav-info ul li i {
+  font-size: 30px;
+}
+.nav-info ul li::after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-radius: 20px;
+  width: 90%;
+  transform: scaleX(0);
+  background-color: #231f20;
+  bottom: 0;
+  left: 0;
+  transition: all 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.nav-info ul li:hover::after {
+  transform: scaleX(1);
+}
+
+.select-country img {
+  width: 25px;
+  height: 25px;
+  margin: 0 5px;
+}
+.select-country li i {
+  color: #312f2f;
+}
+.select-country {
+  position: relative;
+}
+.line-country {
+  padding: 5px;
+}
+
+ul.line-country li:not(:last-child) {
+  border-right: 1px solid #ccc;
+}
+.line-country li{
+  transition: 0.3s ease;
+}
+.line-country li:hover{
+  transform: scaleX(1.1);
+  box-shadow: 0 8px 10px -7px #a09e9e;
+
+}
+.menu-product {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  padding: 30px;
+}
+/* search */
+
+.wave-group {
+  position: relative;
+}
+
+.wave-group .input {
+  font-size: 16px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #515151;
+  background: transparent;
+}
+
+.wave-group .input:focus {
+  outline: none;
+}
+
+.wave-group .label {
+  color: #999;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  display: flex;
+}
+
+.wave-group .label-char {
+  transition: 0.2s ease all;
+  transition-delay: calc(var(--index) * 0.05s);
+}
+
+.wave-group .input:focus ~ label .label-char,
+.wave-group .input:valid ~ label .label-char {
+  transform: translateY(-20px);
+  font-size: 14px;
+  color: #5264ae;
+}
+
+.wave-group .bar {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.wave-group .bar:before,
+.wave-group .bar:after {
+  content: "";
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: #5264ae;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+.wave-group .bar:before {
+  left: 50%;
+}
+
+.wave-group .bar:after {
+  right: 50%;
+}
+
+.wave-group .input:focus ~ .bar:before,
+.wave-group .input:focus ~ .bar:after {
+  width: 50%;
+}
+
+/* option */
+a {
+  text-decoration: none;
+}
+.megavita-menu {
+  padding: 0 20px;
+}
+.option-function a {
+  color: #231f20;
+  margin: 5px 0;
+  line-height: 2;
+  font-size: 18px;
+}
+.megavita-trademark a {
+  line-height: 2;
+  font-size: 20px;
+  color: #231f20;
+}
+.cyberpunk-checkbox {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #312f2f;
+  border-radius: 5px;
+  background-color: transparent;
+  display: inline-block;
+  position: relative;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.cyberpunk-checkbox:before {
+  content: "";
+  background-color: #312f2f;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.cyberpunk-checkbox:checked:before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.cyberpunk-checkbox-label {
+  font-size: 18px;
+  color: #312f2f;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+}
+
+/* product */
+.megavita-product {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 50px 20px;
+}
+
+.footer-text {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 18px;
+}
+.sao-danh-gia{
+  display: flex;gap: 5px;
+  align-items: center;
+}
+.sao-danh-gia i{
+  font-size: 10px;
+}

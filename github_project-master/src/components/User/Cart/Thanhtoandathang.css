@@ -1,0 +1,364 @@
+.header-logo-orderpay {
+  margin-top: -5px;
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+  align-items: center;
+  height: 85px;
+}
+.orderpay-logo-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 10px;
+  max-height: 85px;
+  color: #303846;
+}
+.orderpay-cart {
+  width: 150px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  min-height: 85px;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+.orderpay-cart i {
+  background-color: black;
+  color: aliceblue;
+  border-radius: 100rem;
+  padding: 15px;
+}
+.orderpay-tellphone {
+  line-height: 1;
+  text-align: right;
+}
+.orderpay-tellphone p {
+  font-size: 13px;
+}
+.p-tellphone {
+  display: inline;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  width: auto;
+  border-radius: 20px;
+}
+/* section-orderpay-product */
+.orderpay-item-name {
+  font-size: 10px;
+}
+.section-orderpay-product {
+  padding-top: 30px;
+  display: grid;
+  grid-template-columns: 4fr 2fr;
+  gap: 20px;
+}
+.main-orderpay-product {
+  background: #eaedf1;
+  margin: 5px 0;
+  padding: 0;
+}
+/* orderpay-product-card */
+.orderpay-product-card {
+  margin: 20px 0;
+  background: #fbfffe;
+  border-radius: 10px;
+}
+.orderpay-miczone {
+  margin: 10px;
+  padding: 10px;
+}
+.orderpay-miczone i {
+  margin: 0 10px;
+}
+.orderpay-product-item {
+  padding: 5px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  border-top: #c3cdde 1px solid;
+}
+.orderpay-item-img {
+  min-height: 100px;
+  min-width: 100px;
+  margin: 0 10px;
+  overflow: hidden;
+}
+.orderpay-item-img img {
+  width: 100px;
+  object-fit: cover;
+  color: transparent;
+}
+.meta-item-wrap,
+.meta-item {
+  display: flex;
+  padding: 5px;
+  font-size: 10px;
+}
+.item-name {
+  max-width: 400px;
+}
+.orderpay-shipdate,
+.shipdate,
+.quantity-buy {
+  font-size: 13px;
+}
+.orderpay-item-price {
+  margin: 0 10px;
+}
+/* info-orderpay */
+.lable-section-orderpay {
+  color: #78859e;
+}
+.info-orderpay {
+  display: flex;
+  margin: 20px 0;
+  padding: 20px;
+  justify-content: center;
+  background: #fbfffe;
+  border-radius: 10px;
+}
+.info-orderpay-login-text,
+.write-info-orderpay-text {
+  font-size: 13px;
+  max-width: 400px;
+  color: #303846;
+  font-weight: 500;
+}
+.info-orderpay button {
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 10px 0;
+  font-weight: 500;
+}
+.info-orderpay-login {
+  margin: 0 10px;
+}
+.info-orderpay-login button {
+  background: #fbfffe;
+  color: #141414;
+  border: 2px #141414 solid;
+}
+
+/* phuong thuc thanh toan */
+.phuong-thuc-thanh-toan {
+  margin: 10px;
+  background: #fbfffe;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 50px;
+}
+.bg-chon-loai-thanh-toan {
+  background: #e2e2e9;
+}
+.chon-loai-thanh-toan {
+  display: flex;
+  justify-content: space-around;
+}
+.thanh-toan-bank {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 80px;
+  gap: 10px;
+  margin-top: 20px;
+}
+.thanh-toan-bank li {
+  display: flex;
+  margin-right: 10px;
+  width: 200px;
+  height: 70px;
+  background: #f7fffd;
+  align-items: center;
+  border-radius: 10px;
+  transition: 0.55s ease;
+}
+.ten-the-thanh-toan {
+  font-size: 14px;
+}
+.thanh-toan-bank li img {
+  width: 50px;
+  margin: 0 10px;
+}
+.thanh-toan-bank li:hover {
+  box-shadow: 0 0 20px -5px #303846;
+  background: #e6e7e7;
+}
+.thong-tin-them {
+  font-size: 13px;
+  text-align: center;
+  padding: 10px;
+  border-bottom: #dce3f1 1px solid;
+}
+/* bank-khac */
+.bank-khac {
+  margin: 0 20px;
+}
+.mk23 {
+  background: #5c5c5c;
+  color: #f7fffd;
+  font-size: 13px;
+  padding: 10px 0;
+  border-radius: 10px;
+  margin: 20px 0;
+  text-align: center;
+}
+.info-orderpay-login-text {
+  color: #78859e;
+  margin: 20px 0;
+  padding-bottom: 20px;
+  border-bottom: #dce3f1 1px solid;
+}
+.bank-vcm-tcb {
+  display: flex;
+  padding-bottom: 20px;
+  border-bottom: #dce3f1 1px solid;
+  justify-content: center;
+  margin: 20px;
+}
+.bank-vcm-tcb img {
+  width: 130px;
+  height: 43px;
+  border: #141414 1px solid;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 0 10px;
+}
+.phan-thong-tin-con-lai p {
+  font-size: 13px;
+  color: #78859e;
+}
+/* orderpay-footer */
+.orderpay-footer {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  padding: 20px;
+  margin: 0;
+}
+.orderpay-footer-web {
+  font-size: 13px;
+  font-weight: 500;
+}
+/* orderpay-pay */
+.orderpay-pay {
+  margin: 10px 0;
+  position: sticky;
+}
+.han-muc-thanh-toan {
+  background: #f7fffd;
+  border-radius: 10px;
+  max-width: 350px;
+}
+.han-muc-thanh-toan-100,
+.tong-bill,
+.phi-dat-don-tong {
+  display: flex;
+  align-items: center;
+}
+.han-muc-thanh-toan-100 {
+  justify-content: space-between;
+  padding: 0;
+  color: #303846;
+  font-weight: 500;
+  margin: 10px;
+}
+.han-muc-thanh-toan-100 button {
+  padding: 5px;
+  margin: 10px;
+  border: none;
+  background: #141414;
+  color: #fbfffe;
+}
+.orderpay-pay p {
+  font-size: 13px;
+  color: #f7fffd;
+  background: #5c5c5c;
+  padding: 10px 20px;
+  width: 100%;
+}
+.tong-bill {
+  justify-content: space-between;
+  margin: 0 20px;
+  padding: 10px 0;
+  border-bottom: #dce3f1 1px solid;
+}
+.lable-tong-bill {
+  font-weight: 500;
+  color: #303846;
+}
+.ma-giam-km {
+  margin: 20px;
+}
+.ma-giam-km label {
+  margin-bottom: 5px;
+}
+.ma-giam-km input {
+  padding: 5px;
+  border-bottom-left-radius: 4px;
+  border: #dce3f1 1px solid;
+  border-top-left-radius: 4px;
+}
+.ma-giam-km button {
+  padding: 5px;
+  border: none;
+  background: #141414;
+  color: #f7fffd;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.phi-dat-don {
+  background: #5c5c5c;
+  color: #f7fffd;
+  padding: 5px 0;
+  align-items: center;
+}
+.phi-dat-don-tong {
+  justify-content: space-between;
+  padding: 0 20px;
+  margin: 0;
+}
+.tong-bill-san-pham {
+  font-size: 20px;
+  font-weight: 500;
+}
+.dat-mua {
+  display: grid;
+  place-items: center;
+  padding: 20px;
+}
+.dat-mua button{
+padding: 5px;width: 80%;
+border: none;
+background: #141414;
+color: #f7fffd;
+}
+/* ten-user-va-dia-chi */
+.ten-user-va-dia-chi{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+.head-titile-ttdh{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 20px;
+}
+.head-titile-ttdh > span > button{
+  background: #303846;
+  color: #c3cdde;
+  border-radius: 20px;
+  padding: 0 5px;
+
+}
+.thong-tin-dat-hang-da-co{
+  background: #f7fffd;
+  padding: 10px;
+  border-radius: 8px;
+}

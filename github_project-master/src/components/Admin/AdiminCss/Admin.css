@@ -1,0 +1,7 @@
+.Playout-Admin {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
