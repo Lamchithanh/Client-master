@@ -13,8 +13,8 @@ import DetailProduct from "./DetailProduct";
 
 const AddProduct = () => {
     const dispatch = useDispatch();
-    const toastaddpro = () => toast("Add Product Success!");
-    const toastdelete = () => toast("Delete Product Success!");
+    const toastaddpro = () => toast("Thêm Sản Phẩm Thành Công!");
+    const toastdelete = () => toast("Xóa Sản Phẩm Thành Công!");
     const { products } = useSelector((store) => store);
 
     const initialProductData = {
@@ -129,7 +129,7 @@ const AddProduct = () => {
                     alt="sell"
                 />
 
-                <h2>Product</h2>
+                <h2>Sản Phẩm</h2>
             </div>
             <hr />
             <div className="form-AddProduct">
@@ -139,7 +139,7 @@ const AddProduct = () => {
                     data-bs-toggle="collapse"
                     data-bs-target="#Addproduct"
                 >
-                    Add Product
+                    Thêm Sản Phẩm
                 </button>
                 <div id="Addproduct" class="collapse">
                     <div class="container " id="container-Addproduct">
@@ -148,32 +148,32 @@ const AddProduct = () => {
                             className="From-addproduct"
                             onSubmit={handleSubmit}
                         >
-                            <label for="fname">Image</label>
+                            <label for="fname">Hình Ảnh</label>
                             <input
                                 type="text"
                                 id="imageUrl"
                                 name="imageUrl"
-                                placeholder="Enter your image..."
+                                placeholder="Nhập hình ảnh của bạn..."
                                 value={formData.imageUrl || ""}
                                 onChange={handleInputChange}
                             />
-                            <label for="fname">Title</label>
+                            <label for="fname">Tiêu Đề</label>
                             <input
                                 type="text"
                                 id="title"
                                 name="title"
-                                placeholder="Enter your title..."
+                                placeholder="Nhập tiêu đề của bạn..."
                                 value={formData.title || ""}
                                 onChange={handleInputChange}
                             />
-                            <label for="fname">Made in</label>
+                            <label for="fname">Nơi Sản Xuất</label>
                             <select
                                 id="soldAt"
                                 name="soldAt"
                                 value={formData.soldAt}
                                 onChange={handleInputChange}
                             >
-                                <option value="null">Select a Country</option>
+                                <option value="null">Chọn Quốc Gia</option>
                                 <option value="Việt Nam">Việt Nam</option>
                                 <option value="Mỹ">Mỹ</option>
                                 <option value="Nhật">Nhật</option>
@@ -182,35 +182,35 @@ const AddProduct = () => {
                             </select>
                             {/* phan sua moi */}
                             <label for="fname" style={{ marginTop: "10px" }}>
-                                Top lavel Category
+                                Danh Mục Cấp Trên
                             </label>
                             <input
                                 type="text"
                                 id="topLavelCategory"
                                 name="topLavelCategory"
-                                placeholder="Your name.."
+                                placeholder="Tên của bạn.."
                                 value={formData.topLavelCategory || ""}
                                 onChange={handleInputChange}
                             />{" "}
-                            <label for="fname">Second lavel Category</label>
+                            <label for="fname">Danh Mục Cấp Hai</label>
                             <input
                                 type="text"
                                 id="secondLavelCategory"
                                 name="secondLavelCategory"
-                                placeholder="Your name.."
+                                placeholder="Tên của bạn.."
                                 value={formData.secondLavelCategory || ""}
                                 onChange={handleInputChange}
                             />{" "}
-                            <label for="fname">Third lavel Category</label>
+                            <label for="fname">Danh Mục Cấp Ba</label>
                             <input
                                 type="text"
                                 id="thirdLavelCategory"
                                 name="thirdLavelCategory"
-                                placeholder="Your name.."
+                                placeholder="Tên của bạn.."
                                 value={formData.thirdLavelCategory || ""}
                                 onChange={handleInputChange}
                             />{" "}
-                            <label for="fname">Brand</label>
+                            <label for="fname">Thương Hiệu</label>
                             <select
                                 id="brand"
                                 name="brand"
@@ -226,7 +226,7 @@ const AddProduct = () => {
                                 }
                                 onChange={handleInputChange}
                             >
-                                <option value="null">Select a Brand</option>
+                                <option value="null">Chọn Thương Hiệu</option>
 
                                 {products.brands.map((brand) => (
                                     <option key={brand.id} value={brand.name}>
@@ -241,7 +241,7 @@ const AddProduct = () => {
                                         className="List-item-color"
                                     >
                                         <label htmlFor={`color-${colorIndex}`}>
-                                            Color
+                                            Màu
                                         </label>
 
                                         <input
@@ -260,7 +260,7 @@ const AddProduct = () => {
                                                 <label
                                                     htmlFor={`size-${colorIndex}-${sizeIndex}`}
                                                 >
-                                                    Size
+                                                    Kích Cỡ
                                                 </label>
                                                 <input
                                                     type="text"
@@ -278,7 +278,7 @@ const AddProduct = () => {
                                                 <label
                                                     htmlFor={`quantity-${colorIndex}-${sizeIndex}`}
                                                 >
-                                                    Quantity
+                                                    Số Lượng
                                                 </label>
                                                 <input
                                                     type="number"
@@ -304,7 +304,7 @@ const AddProduct = () => {
                                                     }
                                                     className="btn-remove-size"
                                                 >
-                                                    Remove Size
+                                                    Xóa Kích Cỡ
                                                 </button>
                                             </div>
                                         ))}
@@ -315,7 +315,7 @@ const AddProduct = () => {
                                             }
                                             className="btn-remove-color"
                                         >
-                                            Add Size
+                                            Thêm Kích Cỡ
                                         </button>
                                         <button
                                             type="button"
@@ -324,7 +324,7 @@ const AddProduct = () => {
                                             }
                                             className="btn-remove-color"
                                         >
-                                            Remove Color
+                                            Xóa Màu
                                         </button>
                                     </div>
                                 ))}
@@ -333,29 +333,29 @@ const AddProduct = () => {
                                     className="btn-add-color"
                                     onClick={handleAddColor}
                                 >
-                                    Add Color
+                                    Thêm Màu
                                 </button>
                             </div>
                             <div className="list-value-price">
-                                <label for="fname">Price</label>
+                                <label for="fname">Giá</label>
                                 <input
                                     type="text"
                                     id="price"
                                     name="price"
-                                    placeholder="Product price.."
+                                    placeholder="Giá sản phẩm.."
                                     value={formData.price}
                                     onChange={handleInputChange}
                                 />
-                                <label for="fname">Discount(%)</label>
+                                <label for="fname">Giảm Giá (%)</label>
                                 <input
                                     type="text"
                                     id="discountPersent"
                                     name="discountPersent"
-                                    placeholder="Discount percentage.."
+                                    placeholder="Phần trăm giảm giá.."
                                     value={formData.discountPersent}
                                     onChange={handleInputChange}
                                 />
-                                <label for="fname">Total price</label>
+                                <label for="fname">Tổng Giá</label>
                                 <input
                                     type="text"
                                     id="totalPrice"
@@ -374,11 +374,11 @@ const AddProduct = () => {
                                     }}
                                 />
                             </div>
-                            <label for="fname">Description</label>
+                            <label for="fname">Mô Tả</label>
                             <textarea
                                 id="description"
                                 name="description"
-                                placeholder="Write something.."
+                                placeholder="Viết gì đó.."
                                 value={formData.description || ""}
                                 onChange={handleInputChange}
                                 style={{ height: "100px" }}
@@ -388,7 +388,7 @@ const AddProduct = () => {
                                 className="btn-xac-nhan-them"
                                 // onClick={toastaddpro}
                             >
-                                Add
+                                Thêm
                             </button>
                             {/* <ToastContainer /> */}
                         </form>
@@ -400,22 +400,24 @@ const AddProduct = () => {
                 style={{ width: "2000px !important" }}
             >
                 <div class="container mt-3">
-                    <h2>Product Information</h2>
-                    <p>List of currently available products :</p>
+                    <h2>Thông Tin Sản Phẩm</h2>
+                    <p>Danh sách các sản phẩm hiện có :</p>
                     <table class="table-addproduct ">
                         <thead>
                             <tr>
                                 <th style={{ width: "20px" }}>ID</th>
-                                <th style={{ width: "10%" }}>Image</th>
-                                <th style={{ width: "21%" }}>Title</th>
-                                <th style={{ paddingLeft: "20px" }}>Made in</th>
-                                <th>Brand</th>
-                                <th>Category</th>
-                                <th>Price</th>
-                                <th>Discount (%)</th>
-                                <th>Total Price</th>
-                                <th>Stock</th>
-                                <th style={{ width: "6%" }}>Action</th>
+                                <th style={{ width: "10%" }}>Hình Ảnh</th>
+                                <th style={{ width: "21%" }}>Tiêu Đề</th>
+                                <th style={{ paddingLeft: "20px" }}>
+                                    Nơi Sản Xuất
+                                </th>
+                                <th>Thương Hiệu</th>
+                                <th>Danh Mục</th>
+                                <th>Giá</th>
+                                <th>Giảm Giá (%)</th>
+                                <th>Tổng Giá</th>
+                                <th>Tồn Kho</th>
+                                <th style={{ width: "6%" }}>Hành Động</th>
                             </tr>
                         </thead>
                     </table>

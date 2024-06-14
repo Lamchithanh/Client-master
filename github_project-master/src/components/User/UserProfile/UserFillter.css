@@ -158,7 +158,6 @@
     font-weight: 500;
     margin: 0;
     margin-top: 15px;
-  
 }
 /* check */
 .form-check-userfillter label {
@@ -177,7 +176,6 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f1f1f1;
-    
 }
 
 .radio-group {
@@ -204,7 +202,6 @@ body {
 .radio-input {
     position: absolute;
     opacity: 0;
-
 }
 
 .radio-input:checked + .radio-label {
@@ -276,18 +273,16 @@ body {
 .title-sp-yeu-thich {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    
-  
 }
 .nav-sp-yeu-thich {
     margin-left: 20px;
 }
 #menu5 {
-    position: absolute;
-    top: 55%;
     margin-left: 10%;
     margin-right: 10%;
     width: 80%;
+    display: grid;
+    grid-auto-rows: auto;
 }
 .san-pham-yeu-thich {
     display: flex;

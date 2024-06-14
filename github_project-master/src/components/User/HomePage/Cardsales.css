@@ -301,11 +301,12 @@ a {
   padding: 0;
   margin-bottom: 0;
 }
-.price-product li.price-product-default {
+.price-product li.price-product-values {
   font-weight: normal;
 }
-.price-product-default {
+.price-product-values {
   text-decoration: line-through;
+  font-size: 13px !important;
 }
 .price-product-icon {
   margin: 20px 0;

@@ -521,7 +521,6 @@ const HomePage = () => {
                                 ))}
                         </div>
                     </div>
-                    );
                 </section>
                 {/* deal world */}
                 <nav>

@@ -9,7 +9,7 @@ body {
     /* margin: 8px; */
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
-    font-size: 13px;
+    /* font-size: 13px; */
 }
 
 ul {
@@ -484,6 +484,7 @@ ul.country3 {
   position: fixed;
   bottom: 100px;
   right: 20px;
+  color: aliceblue;
   background: linear-gradient(
       to right,
       #52a0fd 0%,

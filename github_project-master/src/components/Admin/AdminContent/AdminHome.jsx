@@ -71,7 +71,29 @@ const AdminHome = () => {
                                 {admin.data.saleAmountQuantity
                                     ? `${Math.round(
                                           admin.data.saleAmountQuantity
-                                      ).toLocaleString()},000 đ`
+                                      ).toLocaleString()}.000 đ`
+                                    : "0 đ"}
+                            </strong>
+                        </p>
+                    </div>
+                </div>
+                <div id="toalallproduct" className="Admin-card-table-value">
+                    <h2>Sản phẩm đã bán</h2>
+                    <div className="Actual-data">
+                        <img
+                            width="80"
+                            height="80"
+                            src="https://img.icons8.com/dotty/80/plus.png"
+                            alt="plus"
+                        />
+
+                        <p className="item-data-right">
+                            <strong>
+                                ${" "}
+                                {admin.data.saleAmountQuantity
+                                    ? `${Math.round(
+                                          admin.data.saleAmountQuantity
+                                      ).toLocaleString()}.000 đ`
                                     : "0 đ"}
                             </strong>
                         </p>

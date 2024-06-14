@@ -206,7 +206,8 @@ label {
   gap: 10px;
 }
 .price-and {
-  text-decoration: line-through;
+ font-size: 18px;
+ font-weight: 700;
 }
 .danh-gia-san-pham {
   margin-top: 40px;

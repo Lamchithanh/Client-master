@@ -37,12 +37,12 @@ const Filterproduct = () => {
                             Sản phẩm
                         </label>
                         <Link to="/filterproduct">
-                            <li onClick={() => handleSoldAt("Việt Nam")}>
+                            <li onClick={() => handleSoldAt("Việt Nam")} >
                                 Việt Nam
                             </li>
                         </Link>
                         <Link to="/filterproduct">
-                            <li onClick={() => handleSoldAt("Mỹ")}>Mỹ</li>
+                            <li className="active" onClick={() => handleSoldAt("Mỹ")}>Mỹ</li>
                         </Link>
                         <Link to="/filterproduct">
                             <li onClick={() => handleSoldAt("Nhật")}>Nhật</li>
@@ -60,21 +60,18 @@ const Filterproduct = () => {
                             <li>Hàng cao cấp</li>
                         </Link>
                         <Link to="/">
-                            <li>Tất cả</li>
+                            <li className="allProduct">Tất cả</li>
                         </Link>
                         <ToastContainer />
                     </ul>
                 </section>
-                <section>
+                <section className="show-allproduct">
                     <ul className="title-product">
-                        <li>Kết quả tìm kiếm cho</li>
-                        <li className="title-search-product">"Đồng hồ"</li>
+                        <li>Đây là Kết quả tìm kiếm</li>
+                        <li className="title-search-product"></li>
                     </ul>
                     <ul className="list-card-result">
-                        <li>Danh sách sản phẩm</li>
-                        <li className="title-search-product">"đồng hồ"</li>
-                        <li>chính hãng từ </li>
-                        <li className="title-product-made-in"> Mỹ</li>
+                        <li>Danh sách sản phẩm chính hãng</li>
                     </ul>
                     <div className="list-search-product">
                         {Array.isArray(products?.products) &&
@@ -96,24 +93,21 @@ const Filterproduct = () => {
                             65,642
                         </span>{" "}
                         sản phẩm
-                        <span className="title-search-product name-search">
-                            quần áo nữ
-                        </span>{" "}
                         được tìm thấy tại{" "}
                         <span className="title-product-made-in select-county">
-                            Mỹ
+                           khắp thế giới
                         </span>{" "}
                         , bạn sẽ có cơ hội mua sắm và sở hữu món đồ như ý phù
                         hợp nhu cầu cũng như túi tiền. Để tìm hiểu thêm về
                         <span className="title-search-product name-search">
-                            quần áo nữ
+                            sản phẩm
                         </span>{" "}
                         hãy cùng theo dõi thông tin bên dưới.
                     </p>
                     <p>
                         Chọn Chọn
                         <span className="title-search-product name-search">
-                            quần áo nữ
+                        sản phẩm
                         </span>{" "}
                         hàng hiệu chính hãng, chất lượng tại T&T hàng hiệu chính
                         hãng, chất lượng tại T&T
@@ -122,7 +116,7 @@ const Filterproduct = () => {
                         Là sàn TMĐT xuyên biên giới hàng đầu, T&T cam kết mang
                         đến sản phẩm chính hãng, đảm bảo chất lượng. Tất cả
                         <span className="title-search-product name-search">
-                            quần áo nữ
+                        sản phẩm
                         </span>{" "}
                         đều có nguồn gốc xuất xứ rõ ràng đi kèm thông tin chi
                         tiết. Khi chọn mua, bạn có thể tham khảo và tìm được sản
@@ -136,18 +130,18 @@ const Filterproduct = () => {
                     <p>
                         Làm sao để chọn
                         <span className="title-search-product name-search">
-                            quần áo nữ
+                        sản phẩm
                         </span>{" "}
                         phù hợp, đảm bảo chất lượng?
                     </p>
                     <p>
                         Rất nhiều sản phẩm
                         <span className="title-search-product name-search">
-                            quần áo nữ
+                        sản phẩm
                         </span>{" "}
                         được tìm thấy từ{" "}
                         <span className="title-product-made-in select-county">
-                            Mỹ
+                        khắp thế giới
                         </span>{" "}
                         dành cho bạn, làm sao để chọn được món đồ phù hợp ưng ý
                         vừa đảm bảo chất lượng vừa có giá cả phù hợp. Dưới đây
@@ -158,7 +152,7 @@ const Filterproduct = () => {
                     <p>
                         Trước khi chọn mua, bạn cần phải xem kỹ thông tin của
                         <span className="title-search-product name-search">
-                            quần áo nữ
+                        sản phẩm
                         </span>
                         . Tất cả thông tin về sản phẩm sẽ được thể hiện đầy đủ,
                         minh bạch và rõ ràng trên website. Như vậy, bạn mới có
@@ -178,7 +172,7 @@ const Filterproduct = () => {
                     </p>
                     <p>Tham khảo mức giá từ các nhà cung cấp</p>
                     <p>
-                        Mức giá của quần áo nữ được hiển thị bên dưới tên sản
+                        Mức giá của sản phẩm được hiển thị bên dưới tên sản
                         phẩm, giá bạn thấy sẽ bằng giá bạn trả khi mua hàng, giá
                         sản phẩm luôn cập nhật mới chuẩn xác theo thời gian. Lúc
                         này, bạn có thể quan sát và tìm ra sản phẩm phù hợp để
@@ -190,7 +184,7 @@ const Filterproduct = () => {
                     <p>
                         Sản phẩm
                         <span className="title-search-product name-search">
-                            quần áo nữ
+                        sản phẩm
                         </span>{" "}
                         có giá bao nhiêu?
                     </p>
@@ -214,7 +208,7 @@ const Filterproduct = () => {
                     <p>
                         Mua{" "}
                         <span className="title-search-product name-search">
-                            quần áo nữ
+                        sản phẩm
                         </span>{" "}
                         ở đâu đảm bảo chính hãng, giá tốt?
                     </p>
@@ -227,7 +221,7 @@ const Filterproduct = () => {
                         hãng trở nên khó khăn hơn. Vậy khi có nhu cầu, chúng ta
                         nên mua sản phẩm
                         <span className="title-search-product name-search">
-                            quần áo nữ
+                        sản phẩm
                         </span>{" "}
                         ở đâu đảm bảo chất lượng, chính hãng với giá tốt?
                     </p>
@@ -235,11 +229,11 @@ const Filterproduct = () => {
                         Sàn TMĐT xuyên biên giới <b>T&T.vn</b> với hàng tỷ sản
                         phẩm từ
                         <span className="title-product-made-in select-county">
-                            Mỹ
+                        khắp thế giới
                         </span>
                         , Nhật, Anh, Đức, Úc,...sẽ giúp bạn chọn được
                         <span className="title-search-product name-search">
-                            quần áo nữ
+                        sản phẩm
                         </span>{" "}
                         như ý. Không chỉ đảm bảo chất lượng, cam kết nguồn gốc,
                         T&T còn mang đến rất nhiều chương trình hấp dẫn dành cho
@@ -272,7 +266,7 @@ const Filterproduct = () => {
                         T&T cho bạn thoải sức mua sắm. Nếu bạn đang muốn sở hữu
                         sản phẩm này hay bất kỳ mặt hàng nào từ
                         <span className="title-product-made-in select-county">
-                            Mỹ
+                           khắp thế giới
                         </span>
                         , Nhật, Anh, Đức, Úc,...thì còn chần chờ gì mà không
                         truy cập và trải nghiệm ngay.

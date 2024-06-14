@@ -3,7 +3,6 @@ import "./UserFillter.css";
 import Editinfouser from "./Editinfouser";
 import Example from "../Cart/modal";
 import { getUser, updateUserProfile } from "../../../State/Auth/Action";
-import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { ToastContainer } from "react-toastify";
 import {
@@ -13,18 +12,24 @@ import {
 
 const UserFillter = () => {
     const dispatch = useDispatch();
-    const { auth } = useSelector((store) => store);
-    const { products } = useSelector((store) => store);
+    const { auth, products } = useSelector((store) => store);
     const [gender, setGender] = useState("");
+
     useEffect(() => {
         dispatch(getUser());
+        dispatch(findAllProductFavourite());
     }, [dispatch]);
+
     useEffect(() => {
         if (auth.auth?.gender === "nam" || auth.auth?.gender === "nữ") {
             setGender(auth.auth?.gender);
         }
-        dispatch(findAllProductFavourite());
     }, [auth]);
+
+    useEffect(() => {
+        // Cuộn lên đầu trang khi component được mount
+        window.scrollTo(0, 0);
+    }, []);
 
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -37,65 +42,62 @@ const UserFillter = () => {
         };
         dispatch(updateUserProfile(userData));
     };
+
     const handleGenderChange = (event) => {
         setGender(event.target.value);
     };
+
     const handleDelete = (productId) => {
         dispatch(removeFavourite(productId));
     };
 
     return (
         <div className="profile-main">
-            <div>
-                {" "}
-                <Editinfouser />
-            </div>
-
-            <ul class="nav nav-tabs container" role="tablist">
-                <li class="nav-item">
+            <Editinfouser />
+            <ul className="nav nav-tabs container" role="tablist">
+                <li className="nav-item">
                     <a
-                        class="nav-link active"
+                        className="nav-link active"
                         data-bs-toggle="tab"
                         href="#home"
                     >
                         Tài khoản
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-bs-toggle="tab" href="#menu1">
+                <li className="nav-item">
+                    <a className="nav-link" data-bs-toggle="tab" href="#menu1">
                         Sổ địa chỉ
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-bs-toggle="tab" href="#menu2">
+                <li className="nav-item">
+                    <a className="nav-link" data-bs-toggle="tab" href="#menu2">
                         Tài khoản trả trước
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-bs-toggle="tab" href="#menu3">
+                <li className="nav-item">
+                    <a className="nav-link" data-bs-toggle="tab" href="#menu3">
                         Quản lý mua hàng
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-bs-toggle="tab" href="#menu4">
+                <li className="nav-item">
+                    <a className="nav-link" data-bs-toggle="tab" href="#menu4">
                         Mã giảm giá
                     </a>
                 </li>
-                <li class="nav-item" id="product-like">
-                    <a class="nav-link" data-bs-toggle="tab" href="#menu5">
+                <li className="nav-item" id="product-like">
+                    <a className="nav-link" data-bs-toggle="tab" href="#menu5">
                         Sản phẩm yêu thích
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-bs-toggle="tab" href="#menu6">
+                <li className="nav-item">
+                    <a className="nav-link" data-bs-toggle="tab" href="#menu6">
                         Đại sứ T&T
                     </a>
                 </li>
             </ul>
 
-            <div class="tab-content">
-                <div id="home" class="container tab-pane active">
-                    <br />
+            <div className="tab-content">
+                <div id="home" className="container tab-pane active">
                     <div class="container btn-UserFillter mt-3">
                         <button
                             type="button"
@@ -219,33 +221,26 @@ const UserFillter = () => {
                         </div>
                     </div>
                 </div>
-                <div id="menu1" class="container tab-pane fade">
-                    <br />
+                <div id="menu1" className="container tab-pane fade">
                     <h3>Sổ địa chỉ</h3>
-                    <img
-                        src="https://st-fe-v2.fado.vn/desktop/image/character/empty-address-book.svg"
-                        alt=""
-                    />
                     <Example />
                 </div>
-                <div id="menu2" class="container tab-pane fade1">
-                    <br />
-                    {/* <h3>Hiện chưa cập nhật!</h3> */}
-                    <div></div>
+                <div id="menu2" className="container tab-pane fade">
+                    {/* Nội dung của tab Tài khoản trả trước */}
                 </div>
-                <div id="menu3" class="container tab-pane fade">
-                    <br />
-                    {/* <h3>Hiện chưa cập nhật!</h3> */}
-                </div>{" "}
-                <div id="menu4" class="container tab-pane fade">
-                    <br />
-                    {/* <h3>Hiện chưa cập nhật!</h3> */}
-                </div>{" "}
-                <div id="menu5" class="container tab-pane fade">
+                <div id="menu3" className="container tab-pane fade">
+                    {/* Nội dung của tab Quản lý mua hàng */}
+                </div>
+                <div id="menu4" className="container tab-pane fade">
+                    {/* Nội dung của tab Mã giảm giá */}
+                </div>
+                <div id="menu5" className="container tab-pane fade">
                     <table class="table">
                         <thead>
                             <tr>
-                                <th colspan="3">Sản phẩm</th>
+                                <th colspan="3">
+                                    <h4>Sản phẩm</h4>
+                                </th>
                             </tr>
                         </thead>
                         <tbody>
@@ -272,19 +267,16 @@ const UserFillter = () => {
                                     </div>
                                 ))}
                         </tbody>
+                        <div className="danh-sach-sp-yeu-thich"></div>
                     </table>
-                  
-                    <div className="danh-sach-sp-yeu-thich">
-                        
-                    </div>
-                </div>{" "}
-                <div id="menu6" class="container tab-pane fade">
-                    <br />
-                    {/* <h3>Hiện chưa cập nhật!</h3> */}
+                </div>
+                <div id="menu6" className="container tab-pane fade">
+                    {/* Nội dung của tab Đại sứ T&T */}
                 </div>
             </div>
-            <div>{/* <UserProfile /> */}</div>
+            <ToastContainer />
         </div>
     );
 };
+
 export default UserFillter;
